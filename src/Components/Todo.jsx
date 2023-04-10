@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './todo.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 
 const Todo = () => {

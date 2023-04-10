@@ -1,0 +1,58 @@
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 20px;
+    
+}
+.maincontainer input{
+    width: 30%;
+    height:25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.maincontainer textarea{
+    width: 30%;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.maincontainer button{
+    width: 20%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color: black;
+    color: red;
+    font-weight: 700;
+}
+.answala{
+    display: flex;
+    width: 90%;
+    height: 80px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.results{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   flex-direction: column;
+
+}
+.firstpart{
+    width: 50%;
+}
+.secondpart{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+

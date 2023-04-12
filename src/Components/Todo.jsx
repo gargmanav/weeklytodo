@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './todo.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import { globaldata } from '../App'
 
 
 const Todo = () => {
+  const {fordata, setfordata} = useContext(globaldata);
   const [data, setdata] = useState("")
   const [arraydata, setarraydata] = useState([])
   const [text, settext] = useState("")
@@ -64,7 +66,7 @@ const Todo = () => {
         
       </div>
       <div className='middlepart'>
-        <h3>Total Task:{arraydata.length}</h3>
+        {fordata ? <h3>Total Task:{arraydata.length}</h3> : <h3>Total Task:0</h3>}
       </div>
       <div className='results'>
         {arraydata.map((ele) => {
